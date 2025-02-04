@@ -1,3 +1,6 @@
+
+Here's your README.md file in proper Markdown format. Copy and save it as README.md in your project folder.
+
 User Management Web App 🎯💻🚀
 Overview 🌟📌🔍
 This project is a PHP-based web application designed for user authentication, profile management, and CRUD operations.
@@ -39,35 +42,37 @@ Modern UI with a gradient background for aesthetics.
 bash
 Copy
 Edit
+```
 web_app/
-│── index.php # Homepage
-│── login.php # User login page
-│── register.php # User registration page
-│── profile.php # User profile page
+│── index.php          # Homepage
+│── login.php          # User login page
+│── register.php       # User registration page
+│── profile.php        # User profile page
 │── update_profile.php # Profile update functionality
 │── delete_account.php # User account deletion
-│── logout.php # Logout functionality
-│── db.php # Database connection
-│── header.php # Navigation bar
-│── footer.php # Footer section
-│── uploads/ # Stores user profile pictures
-│── style.css # Stylesheet
-│── README.md # Documentation file
+│── logout.php         # Logout functionality
+│── db.php             # Database connection
+│── header.php         # Navigation bar
+│── footer.php         # Footer section
+│── uploads/           # Stores user profile pictures
+│── style.css          # Stylesheet
+│── README.md          # Documentation file
 🛢️ Database Schema
+```
 This project uses a users table to store user details.
 
 sql
 Copy
 Edit
 CREATE TABLE users (
-id INT AUTO_INCREMENT PRIMARY KEY,
-username VARCHAR(50) UNIQUE NOT NULL,
-first_name VARCHAR(50) NOT NULL,
-last_name VARCHAR(50) NOT NULL,
-email VARCHAR(100) UNIQUE NOT NULL,
-phone VARCHAR(15) NOT NULL,
-password VARCHAR(255) NOT NULL,
-profile_photo VARCHAR(255) DEFAULT 'uploads/default-avatar.png'
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    phone VARCHAR(15) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    profile_photo VARCHAR(255) DEFAULT 'uploads/default-avatar.png'
 );
 🔧 Installation & Setup
 1️⃣ Install XAMPP
