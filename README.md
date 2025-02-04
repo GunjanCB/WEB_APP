@@ -1,6 +1,4 @@
 
-Here's your README.md file in proper Markdown format. Copy and save it as README.md in your project folder.
-
 User Management Web App 🎯💻🚀
 Overview 🌟📌🔍
 This project is a PHP-based web application designed for user authentication, profile management, and CRUD operations.
@@ -35,13 +33,12 @@ Users can delete their account permanently.
 Uses MySQL to store user data.
 Prepared statements prevent SQL injection.
 Profile pictures are stored in uploads/.
+
 📱 Responsive Design
 Works on mobile, tablet, and desktop.
 Modern UI with a gradient background for aesthetics.
 📁 Project File Structure
-bash
-Copy
-Edit
+
 ```
 web_app/
 │── index.php          # Homepage
@@ -60,10 +57,8 @@ web_app/
 🛢️ Database Schema
 ```
 This project uses a users table to store user details.
+```
 
-sql
-Copy
-Edit
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) UNIQUE NOT NULL,
@@ -74,22 +69,23 @@ CREATE TABLE users (
     password VARCHAR(255) NOT NULL,
     profile_photo VARCHAR(255) DEFAULT 'uploads/default-avatar.png'
 );
+```
 🔧 Installation & Setup
 1️⃣ Install XAMPP
 Download and install XAMPP from Apache Friends.
 Start Apache and MySQL from the XAMPP Control Panel.
+
 2️⃣ Setup the Project
 Move the project folder (web_app/) to htdocs/ (inside XAMPP).
 Open phpMyAdmin and create a database (e.g., web_app_db).
 Import the provided database.sql file.
 Update db.php with your database credentials:
-php
-Copy
-Edit
+
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "web_app_db";
+
 3️⃣ Run the Application
 Open your browser.
 Navigate to http://localhost/web_app/index.php.
@@ -101,20 +97,26 @@ Displays user profile & logout options when logged in.
 🔑 login.php (Login Page)
 Users log in with email & password.
 Redirects to profile page after successful login.
+
 📝 register.php (Registration Page)
 Users register with full details & profile photo.
 Redirects to login after successful registration.
+
 👤 profile.php (Profile Page)
 Displays user information & profile picture.
 Edit profile and delete account options.
+
 ⚙️ update_profile.php (Update Profile)
 Allows editing personal details & changing profile photo.
 Uses AJAX for smooth updates.
+
 🗑️ delete_account.php (Delete Account)
 Permanently removes user data & profile picture.
 Redirects to registration page after deletion.
+
 🔓 logout.php (Logout)
 Ends the session securely and redirects to login.
+
 🛠️ Troubleshooting
 Database Connection Issues
 Ensure MySQL is running in XAMPP.
@@ -125,16 +127,15 @@ Ensure JavaScript files are correctly linked.
 PHP Debugging
 Enable error reporting for troubleshooting:
 
-php
-Copy
-Edit
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
+
 🚀 Future Improvements
 Password reset functionality via email.
 Admin panel for user management.
 Two-factor authentication for security.
 Bootstrap or Tailwind CSS for a better UI.
+
 ✍️ Author
 Gunjan Chandra Bhattacharya
 📌 Course: Web Applications Programming (ITS64504)
