@@ -1,0 +1,324 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+header {
+  background: #79aeea;
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #28a745;
+}
+
+/* Main Content */
+main {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings Centered */
+h2,
+h1 {
+  text-align: center;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* General Button Styling */
+button,
+.btn {
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+button:hover,
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Primary Button (Blue) */
+button {
+  background: #007bff;
+  color: white;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Update Profile Button - Green */
+.update-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.update-btn:hover {
+  background-color: #218838;
+}
+
+/* Delete Account Button - Red */
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Align Buttons Side by Side */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-container a {
+  flex: 1;
+  text-align: center;
+}
+
+/* Messages */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.success {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #79aeea;
+  color: white;
+  padding: 0.25px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+/* Profile Photo */
+.profile-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  main {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 80%;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  header {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    width: 95%;
+    padding: 15px;
+  }
+
+  nav ul {
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 8px 0;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(135deg, #007bff, #00d4ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* Hero Content */
+.hero-content {
+  max-width: 700px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+/* Attractive Buttons */
+.btn {
+  padding: 14px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: background 0.3s, transform 0.2s;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* Profile Button - Standout Effect */
+.profile-btn {
+  background-color: #f39c12;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(243, 156, 18, 0.4);
+}
+
+.profile-btn:hover {
+  background-color: #e67e22;
+}
+
+/* Logout Button - Bold Red */
+.logout-btn {
+  background-color: #e74c3c;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(231, 76, 60, 0.4);
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Register Button */
+.register-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.register-btn:hover {
+  background-color: #218838;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Task Section */
+.task-section {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+.task-section h2 {
+  color: #f1c40f;
+}
+
+/* Welcome Message Container */
+.welcome-container {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+}
